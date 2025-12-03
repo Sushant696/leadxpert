@@ -66,8 +66,6 @@ flutter:
   uses-material-design: true
   assets:
     - assets/animations/leadxpert_basic_animation.json 
-    - assets/images/image.png
-    - assets/images/google.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
