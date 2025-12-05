@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:leadxpert/core/constants/app_colors.dart';
 import 'package:leadxpert/screens/home_screen.dart';
+import 'package:leadxpert/screens/signup_screen.dart';
 import 'package:leadxpert/widgets/my_button.dart';
 import 'package:leadxpert/widgets/my_textfield.dart';
 import 'package:leadxpert/widgets/social_login_button.dart';
@@ -133,7 +134,12 @@ class _LoginScreenState extends State<LoginScreen> {
                     Center(
                       child: GestureDetector(
                         onTap: () {
-                          // Handle navigation to registration screen
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const SignupScreen(),
+                            ),
+                          );
                         },
                         child: RichText(
                           text: TextSpan(
