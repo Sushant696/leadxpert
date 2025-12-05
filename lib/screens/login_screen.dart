@@ -28,7 +28,6 @@ class _LoginScreenState extends State<LoginScreen> {
   void _submitLogin() {
     final form = _formKey.currentState;
     if (form != null && form.validate()) {
-      // navigate to home screen
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => const HomeScreen()),

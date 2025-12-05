@@ -34,7 +34,10 @@ class _SignupScreenState extends State<SignupScreen> {
   void _submitSignup() {
     final form = _formKey.currentState;
     if (form != null && form.validate() && _agreedToTerms) {
-      // Basic mock success action — replace with real auth later.
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const LoginScreen()),
+      );
     } else if (!_agreedToTerms) {
       // Show error message or handle invalid form
     } else {
