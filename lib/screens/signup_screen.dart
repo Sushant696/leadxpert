@@ -39,7 +39,6 @@ class _SignupScreenState extends State<SignupScreen> {
         MaterialPageRoute(builder: (context) => const LoginScreen()),
       );
     } else if (!_agreedToTerms) {
-      // Show error message or handle invalid form
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Please correct the errors in the form')),
