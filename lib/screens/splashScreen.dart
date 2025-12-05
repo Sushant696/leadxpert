@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:leadxpert/screens/login_screen.dart';
+import 'package:leadxpert/screens/onboarding_scree.dart';
 
 import 'package:lottie/lottie.dart';
 
@@ -33,7 +33,7 @@ class _SplashscreenState extends State<Splashscreen>
     Future.delayed(const Duration(milliseconds: 100), () {
       if (mounted) {
         Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => const LoginScreen()),
+          MaterialPageRoute(builder: (context) => const OnboardingScreen()),
         );
       }
     });
